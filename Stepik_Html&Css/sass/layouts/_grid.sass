@@ -1,0 +1,19 @@
+.row
+    max-width: $grid-width
+    background: #f79393
+    margin: 0 auto
+    &:not(:last-child)
+        margin-bottom: $margin-vertical-big
+    &::after
+        @include clearfix
+
+.col-1-of-2
+    width: calc((100% - $gutter-gorizontal)/2)
+    background: #b8f677
+    float: left
+    &:not(:last-child)
+        margin-right: $gutter-gorizontal
+
+.col-1-of-3{
+    }
+        
